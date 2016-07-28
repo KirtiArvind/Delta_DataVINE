@@ -1,0 +1,161 @@
+﻿<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a ui-sref="master" href="#/master">
+                <img src="../assets/images/delta-logo.png" class="navbar-brand" />
+            </a>
+        </div>
+        <div class="collapse navbar-collapse " id="myNavbar">
+            <ul class="nav navbar-nav ">
+                <li><h2 style="margin-left:16%; margin-top:7%"><b>DataVINE&trade;</b></h2></li>
+                <li><h3 style="margin-left: 39%; margin-top: 9%; width: 100%;">Collection Engine</h3></li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="homeImage" style="margin-top:4%;"><h4>&nbsp; Welcome, Angelo B &nbsp; </h4></li>
+                <li><a ui-sref="login" href="#/login" style="color: #000000;margin-top:7%; font-size:15px">Logout &nbsp;<span class="glyphicon glyphicon-log-out"></span></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid homecontainer">
+    <section>
+        <div class="row" style="">
+            <div class="col-lg-6 col-md-6 col-xs-6 ">
+                <div class="heading">
+
+                    <img src="../assets/images/Reports.png" style="margin-left:31%; margin-top:20% " />
+                    <h3 style="color:yellow; margin-left: 30%;">Reports</h3>
+                </div>
+                <div class="sub_top_Report">
+                    <a ui-sref="reports.communicationStatistics" class="text_top_Report anchorLogin">Communication Statistics</a>
+                </div>
+                <div class="sub_other">
+                    <a ui-sref="reports.dataVineHealth" class="text_other anchorLogin">DataVINE Health</a>
+                </div>
+                <div class="sub_other">
+                    <a ui-sref="reports.batteryLife" class="text_other anchorLogin">Battery Life</a>
+                </div>
+                <div class="sub_other">
+                    <a ui-sref="reports.deviceFirmwareVersions" class="text_other anchorLogin">Device Firmware Versions</a>
+                </div>
+                <div class="sub_other">
+                    <a ui-sref="reports.systemUpdates" class="text_other anchorLogin">System Updates</a>
+                </div>
+                <div class="sub_other">
+                    <a ui-sref="reports.deviceRegistrationStatus" class="text_other anchorLogin">Device Registration Status</a>
+                </div>
+                <div class="sub_last_Report">
+                    <a ui-sref="reports.systemAuditLog" class="text_top_Report anchorLogin">System Audit Log</a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-xs-6 " style="">
+                <div class="heading">
+                    <img src="../assets/images/HyperSprout.png" style="margin-left:21%; margin-top:13%" />
+                    <h3 style="color:yellow;margin-left: 19%; margin-top:-1%">HyperSprout</h3>
+                    <h3 style="color:yellow;margin-left: 15%;">Management</h3>
+
+                </div>
+                <div class="sub_top">
+                    <a ui-sref="hyperSprout.configurationManagement" class="text_other anchorLogin">Configuration Management</a>
+                </div>
+                <div class="sub_other">
+                    <a ui-sref="hyperSprout.groupManagement" class="text_other anchorLogin">Group Management</a>
+                </div>
+                <div class="sub_other">
+                    <a ui-sref="hyperSprout.securityCodeManagement" class="text_other anchorLogin">Security Code Management</a>
+                </div>
+                <div class="sub_other">
+                    <a ui-sref="hyperSprout.firmwareManagement" class="text_other anchorLogin">Firmware Management</a>
+                </div>
+                <div class="sub_other">
+                    <a ui-sref="hyperSprout.hyperSproutJobStatus" class="text_other anchorLogin">HyperSprout Job Status</a>
+                </div>
+            </div>
+        </div>
+        <div class="row column2" style="margin-top: 6%;">
+            <div class="col-lg-6 col-md-6 col-xs-6">
+                <div class="heading">
+                    <img src="../assets/images/Meter Management.png" style="margin-left:21%; margin-top:13%" />
+                    <h3 style="color:yellow;margin-left: 34%;  margin-top:-1%">Meter</h3>
+                    <h3 style="color:yellow;margin-left: 15%; ">Management</h3>
+                </div>
+                <div class="sub_top">
+                    <a ui-sref="meter.configurationManagement" class="text_other anchorLogin">Configuration Management</a>
+                </div>
+                <div class="sub_other">
+                    <a ui-sref="meter.groupManagement" class="text_other anchorLogin">Group Management</a>
+                </div>
+                <div class="sub_other">
+                    <a ui-sref="meter.securityCodeManagement" class="text_other anchorLogin">Security Code Management</a>
+                </div>
+                <div class="sub_other">
+                    <a ui-sref="meter.firmwareManagement" class="text_other anchorLogin">Firmware Management</a>
+                </div>
+                <div class="sub_other">
+                    <a ui-sref="meter.JobStatus" class="text_other anchorLogin">Meter Job Status</a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-xs-6">
+                <div class="heading">
+                    <img src="../assets/images/System.png" style="margin-left:28%; margin-top:13%" />
+                    <h3 style="color:yellow;margin-left: 31%;  margin-top:-1%">System </h3>
+                    <h3 style="color:yellow;margin-left: 15%;">Management</h3>
+                </div>
+                <div class="sub_top">
+                    <a ui-sref="system.deviceManagement" class="text_other anchorLogin">Device Management</a>
+                </div>
+                <div class="sub_other">
+                    <a ui-sref="system.networkJobStatus" class="text_other anchorLogin">Network Job Status</a>
+                </div>
+                <div class="sub_other">
+                    <a ui-sref="system.dataVineHealth" class="text_other anchorLogin">DataVINE Health</a>
+                </div>
+                <div class="sub_other">
+                    <a ui-sref="system.endpointCleanup" class="text_other anchorLogin">Endpoint Cleanup</a>
+                </div>
+                <div class="sub_other">
+                    <a ui-sref="system.nodeStatusOverview" class="text_other anchorLogin">Node Status Overview</a>
+                </div>
+            </div>
+        </div>
+        <div class="row column3" style="margin-top:9%">
+            <div class="col-lg-6 col-md-6 col-xs-6 ">
+                <div class="heading">
+                    <img src="../assets/images/Tools.png" style="margin-left:29%; margin-top:20%" />
+                    <h3 style="color:yellow;margin-left: 37%; ">Tools</h3>
+                </div>
+                <div class="sub_top">
+                    <a ui-sref="tools.onDemandNeed" class="text_other anchorLogin">On Demand Need</a>
+                </div>
+                <div class="sub_other">
+                    <a ui-sref="tools.toolsJobStatus" class="text_other anchorLogin">Job Status</a>
+                </div>
+                <div class="sub_other">
+                    <a ui-sref="tools.userSettings" class="text_other anchorLogin">User Settings</a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-xs-6">
+                <div class="heading">
+                    <img src="../assets/images/Admin.png" style="margin-left:31%; margin-top:18%" />
+                    <h3 style="color:yellow;margin-left: 17%; ">Administration</h3>
+                </div>
+                <div class="sub_top">
+                    <a ui-sref="administration.security" class="text_other anchorLogin">Security</a>
+                </div>
+                <div class="sub_other">
+                    <a ui-sref="administration.defineUsers" class="text_other anchorLogin">Define Users</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<footer class="navbar-fixed-bottom homeFooter">
+    <h5 style="color:white; margin-left:37%"><b></b></h5>
+
+</footer>

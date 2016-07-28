@@ -1,0 +1,62 @@
+﻿<div class="container-fluid">
+    <div class="row">
+        <a href='' class="imageBorder" style="margin-left: 80%;"><img src="../assets/images/Print.png" /></a>
+        <a href='' class="imageBorder"><img src="../assets/images/PDF.png" /><b class="anchorText">PDF</b>&nbsp;</a>
+        <a href=''><img src="../assets/images/Excel.png" /><b class="anchorText">Excel</b>&nbsp;</a>
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col-md-6">
+            <div class="row">
+                <input type="checkbox" ng-model="linkFailure" />&nbsp;
+                <h5 style="margin-top: -4%; margin-left: 5%; font-weight: bold;">Link Failure</h5>
+            </div>
+            <div class="row">
+                <input type="checkbox" ng-model="linkMetric" />&nbsp;
+                <h5 style="margin-top: -4%; margin-left: 5%; font-weight: bold;">Link Metric</h5>
+            </div>
+            <div class="row">
+                <input type="checkbox" ng-model="interrogation" />&nbsp;
+                <h5 style="margin-top: -4%; margin-left: 5%; font-weight: bold;">Interrogation Send Succeeded</h5>
+            </div>            
+            <div class="row">
+                <input type="checkbox" ng-model="responseFailed" />&nbsp;
+                <h5 style="margin-top: -4%; margin-left: 5%; font-weight: bold;">Send Response Failed</h5>
+            </div> 
+            <div class="row">
+                <input type="checkbox" ng-model="deregistrationResult" />&nbsp;
+                <h5 style="margin-top: -4%; margin-left: 5%; font-weight: bold;">Deregistration Result</h5>
+            </div> 
+            <div class="row">
+                <input type="checkbox" ng-model="receivedMessageFrom" />&nbsp;
+                <h5 style="margin-top: -4%; margin-left: 5%; font-weight: bold;">Received Message From</h5>
+            </div>       
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <input type="checkbox" ng-model="linkFailure" />&nbsp;
+                <h5 style="margin-top: -4%; margin-left: 5%; font-weight: bold;">DataVine HyperSprout Change</h5>
+            </div>
+            <div class="row">
+                <input type="checkbox" ng-model="linkMetric" />&nbsp;
+                <h5 style="margin-top: -4%; margin-left: 5%; font-weight: bold;">DataVine Sync Father Change</h5>
+            </div>
+            <div class="row">
+                <input type="checkbox" ng-model="interrogation" />&nbsp;
+                <h5 style="margin-top: -4%; margin-left: 5%; font-weight: bold;">Zigbee SE Tunneling Message</h5>
+            </div>
+            <div class="row">
+                <input type="checkbox" ng-model="responseFailed" />&nbsp;
+                <h5 style="margin-top: -4%; margin-left: 5%; font-weight: bold;">Zigbee Simple Metering Message</h5>
+            </div>
+            <div class="row">
+                <input type="checkbox" ng-model="deregistrationResult" />&nbsp;
+                <h5 style="margin-top: -4%; margin-left: 5%; font-weight: bold;">Table Send Request Failed</h5>
+            </div> 
+        </div>
+    </div>
+    <div class='modal-footer'>
+        <button type="submit" ng-click="" class="btn btn-primary modalBtn">Save</button>
+        <button type="submit" ng-click="cancel()" class="btn btn-default">Cancel</button>
+    </div>
+</div>

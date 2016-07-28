@@ -1,0 +1,55 @@
+﻿<div class="container-fluid loginContainer">
+    <section>
+        <div class="row">
+            <div class="col-md-6 loginLeftImage">
+                <div class="row">
+                    <img src="../assets/images/delta_logo.png" class="delta_logo" />
+                        <h5 class="eci">ENERGY &amp; COMMUNICATIONS. INC</h5>
+                </div>
+                <div class="row">
+                    <img src="../assets/images/login_logo.png" class="login_logo" />
+                </div>
+                <div class="row">
+                    <h4 class="loginfooter navbar-fixed-bottom"><b>&copy; All Rights Reserved. DataVINE&trade; 2016</b></h4>
+                </div>
+            </div>
+
+            <div class="col-md-5 loginTrademark">
+                <div class="row">
+                    <h2 class="dataVINE">DataVINE&trade;</h2>
+                </div>
+
+                <div class="row">
+                    <div class="form_bg" style="margin-left: 13%;">
+                        <form ng-submit="loginForm()" method="post">
+                            <br />
+                            <div class="form-group right-user-addon">
+                                <input type="email" class="form-control loginTextbox" name="userName"
+                                       placeholder="Username" required  />
+                                <span class="glyphicon glyphicon-user emailIcon"></span>
+                            </div>
+
+                            <div class="form-group right-lock-addon">
+                                <input type="password" class="form-control loginTextbox" name="password"
+                                    placeholder="Password" required />
+                                <span class="fa fa-lock fa-2x lockIcon"></span>
+                            </div>
+
+                            <span class="rememberMe">
+                                <input type="checkbox" ng-model="rememberMe" class="checkbox_remember"
+                                    value="remember-me" id="remember_me" />&nbsp;Remember me
+                            </span>
+                            <br /><br />
+
+                            <div class="align-center">
+                                <button type="submit" class="btn btn-default loginBtn" id="login"
+                                    ng-click="login()">Login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        <div class="col-md-1 emptyCol"></div>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,23 @@
+﻿<div class="modal-header">
+    <h4 class="modal-title"><b>Group Test Configuration Details</b></h4>
+</div>
+
+<div class="container-fluid modalBackground">
+    <div class="modal-body">
+        <uib-tabset active="active" class="editModalFont">
+            <uib-tab index="0" heading="Group">
+                <div ng-include="'/tabs/group_meter.html'"></div>
+            </uib-tab>
+            <uib-tab index="1" heading="v1 Group Membership">
+                <div ng-include="'/tabs/v1groupMembership_meter.html'"></div>
+            </uib-tab>
+            <uib-tab index="2" heading="v2 Group Membership">
+                <div ng-include="'/tabs/v2groupMembership_meter.html'"></div>
+            </uib-tab>
+        </uib-tabset>
+    </div>
+</div>
+<div class='modal-footer'>
+    <!--<button type="submit" ng-click="" class="btn btn-primary btnColor">Save</button>-->
+    <button type="submit" ng-click="cancel()" class="btn btn-default btnDefault">Close</button>
+</div>

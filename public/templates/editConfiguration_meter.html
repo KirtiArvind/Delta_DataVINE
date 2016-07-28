@@ -1,0 +1,54 @@
+﻿<div class="modal-header">
+    <h4 class="modal-title"><b>Edit Configuration</b></h4>
+</div>
+<div class="container-fluid modalBackground">
+    <div class="modal-body">
+        <div class="row">
+            <h6 class=""><b>Name:</b></h6>
+        </div>
+        <div class="row">
+            <h6 class=""><b>Device Class:</b></h6>
+        </div>
+        <div class="row">
+            <h6 class=""><b>Description</b></h6>
+        </div>
+        <div class="row">
+            <h6 class=""><b>Version:</b></h6>
+        </div>
+        <hr />
+        <div class="container-fluid">
+            <uib-tabset active="active" class="editModalFont">
+                <uib-tab index="0" heading="TOU/Time" style="  ">
+                    <div ng-include="'/tabs/tou_meter.html'"></div>
+                </uib-tab>
+                <uib-tab index="1" heading="Quantities" style="  w">
+                    <div ng-include="'/tabs/quantities_meter.html'"></div>
+                </uib-tab>
+                <!--<uib-tab index="2" heading="Meter Display" style="  width: 10%;">
+                    <div ng-include="'/tabs/display_meter.html'"></div>
+                </uib-tab>-->
+                <uib-tab index="3" heading="Register Operation" style=" ">
+                    <div ng-include="'/tabs/registerOperation_meter.html'"></div>
+                </uib-tab>
+                <uib-tab index="4" heading="Load Profile" style="  ">
+                    <div ng-include="'/tabs/loadProfile_meter.html'"></div>
+                </uib-tab>
+                <uib-tab index="5" heading="Voltage Monitor" style="  ">
+                    <div ng-include="'/tabs/voltageMonitor_meter.html'"></div>
+                </uib-tab>
+                <uib-tab index="6" heading="Events/Alarms" style="  ">
+                    <div ng-include="'/tabs/eventsAlarms_meter.html'"></div>
+                </uib-tab>
+                <!--<uib-tab index="7" heading="User Data" style="  width: 10%;">
+                    <div ng-include="'/tabs/userData_meter.html'"></div>
+                </uib-tab>-->
+                <uib-tab index="8" heading="Device Multiplier" style="   "><!--15%;-->
+                    <div ng-include="'/tabs/deviceMultiplier_meter.html'"></div>
+                </uib-tab>
+                <uib-tab index="8" heading="Communication" style="  ">
+                    <div ng-include="'/tabs/communication_meter.html'"></div>
+                </uib-tab>
+            </uib-tabset>
+        </div>
+    </div>
+</div>

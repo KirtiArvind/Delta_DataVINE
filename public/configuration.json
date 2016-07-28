@@ -1,0 +1,8 @@
+﻿{
+  "protocol": "http",
+  "ip": "localhost",
+  "port": "8082",
+  "endpoint": {
+    "login":  "login"
+  }
+}

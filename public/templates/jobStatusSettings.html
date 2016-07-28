@@ -1,0 +1,66 @@
+﻿<div class="container-fluid">
+    <div class="radio">
+        <h5 style="margin-left: -7%; margin-top: -4%;"><b>Job Filter</b></h5>
+        <a class="btn btn-default pull-right jobStatus_popoverClose" ng-click="dynamicPopover.close()">
+            <span class="glyphicon glyphicon-remove"></span>
+        </a>
+        <div style="margin-top: -4%;">
+            <input type="checkbox" ng-model="selectedAll" />Show All Jobs<br/>
+            <select-all-checkbox checkboxes="ListOfItems" all-selected="AllSelectedItems"
+                                 all-clear="NoSelectedItems"></select-all-checkbox>Show Selected Jobs
+            <div ng-repeat="item in ListOfItems" style="margin-left:12%">
+                <input type="checkbox" ng-model="item.isSelected" />{{item.desc}}
+            </div>
+            <input type="checkbox" ng-model="selectedAll" />Display Only Running Jobs<br />
+            <input type="checkbox" ng-model="selectedAll" />Display Historical Jobs<br />
+        </div>
+    </div>
+    <div class="row drop1">
+        <h5><b>Date Span</b></h5>
+        <div class="input-group jobStatusDateTime">
+            <h5>Date Span</h5>
+            <div class="dropdown dropDateSpan">
+                <button class="btn btn-default btnColor dropdown-toggle dropButton" type="button" data-toggle="dropdown">
+                    Select
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu settingsDateSpan">
+                    <li><a href="#">Last hour</a></li>
+                    <li><a href="#">Option2</a></li>
+                    <li><a href="#">Option3</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <h5 style="margin-left:2%">Start Date Time</h5>
+    </div>
+    <div class="row">
+        <div class="input-group jobStatusDateTime">
+            <input type="text" class="form-control" uib-datepicker-popup ng-model="dt" is-open="popup2.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" />
+            <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="open2()"><i class="glyphicon glyphicon-calendar"></i></button>
+            </span>
+        </div>
+        <div class="row" style="margin-left: 19%;">
+            <uib-timepicker ng-model="mytime" ng-change="changed()" hour-step="hstep" minute-step="mstep" show-meridian="ismeridian"></uib-timepicker>
+        </div>
+    </div>
+    <div class="row">
+        <h5 style="margin-left:2%">End Date Time</h5>
+    </div>
+    <div class="row">
+        <div class="input-group jobStatusDateTime">
+            <input type="text" class="form-control" uib-datepicker-popup ng-model="dt1" is-open="popup1.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" />
+            <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="open1()"><i class="glyphicon glyphicon-calendar"></i></button>
+            </span>
+        </div>
+    </div>
+    <div class="row" style="margin-left: 19%;">
+        <uib-timepicker ng-model="mytime" ng-change="changed()" hour-step="hstep" minute-step="mstep" show-meridian="ismeridian"></uib-timepicker>
+    </div>
+    <div class="row" style="margin-top:10%">
+        <button type="button" name="createReport" class="btn btn-default btnColor createReport">Filter Configurations</button>
+    </div>
+</div>

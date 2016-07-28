@@ -1,0 +1,138 @@
+﻿    <div class="container-fluid">
+        <section>
+            <div class="row">
+                <h4 class="securityCodeAlign"><b>Select Device Class</b></h4>
+            </div>
+            <div class="row">
+                <select class="selectGroup securityCodeAlign" ng-model="device_class.value" ng-options="x for x in device_class.values"></select>
+                <button type="button" ng-click="openAssignSecurityCodes()" class="btn btn-default btnColor pull-right assignSecuritycode">Assign Device Security Codes</button>
+
+            </div>
+        </section>
+        <hr />
+        <section>
+            <div class="row">
+                <h4 class="securityCodeAlign"><b>Device Security Codes</b></h4>
+            </div>
+            <div class="row">
+                <table class="table table-hover" style="border:1px solid #ffffff;">
+                    <tr>
+                        <td><label class="labelAlign">Primary</label></td>
+                    <td><input type="text" class="form-control securityInput_top"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label class="labelAlign">Secondary</label></td>
+                        <td><input type="text" class="form-control securityInput_top"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label class="labelAlign">Tertiary</label></td>
+                        <td><input type="text" class="form-control securityInput_top"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label class="labelAlign">Quarternary</label></td>
+                        <td><input type="text" class="form-control securityInput_top"></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <hr />
+        <section>
+            <div class="row">
+                <h4 class="securityCodeAlign"><b>Encryption Key Settings</b></h4>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 class=""><b>Encryption Key 1</b></h4>
+                    <table class="table table-hover" style="border:1px solid #ffffff;">
+                        <tr>
+                            <td><label>Encryption Type</label></td>
+                        <td>
+                            <select class="selectGroup securityInput" ng-model="encryption_Type.value" ng-options="x for x in encryption_Type.values"></select>
+                        </td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Encryption Key ID</label></td>
+                            <td><input type="text" class="form-control securityInput"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Encryption Key</label></td>
+                        <td>
+                            <input type="text" class="form-control securityInput" disabled>
+                            <span>
+                                <button class="btn btn-secondary key" type="button">
+                                    <i class="fa fa-key" aria-hidden="true"></i>
+                                </button>
+                            </span>
+                        </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <h4 class=""><b>Encryption Key 2</b></h4>
+                    <table class="table table-hover" style="border:1px solid #ffffff;">
+                        <tr>
+                            <td><label>Encryption Type</label></td>
+                        <td>
+                            <select class="selectGroup securityInput" ng-model="encryption_Type_2.value" ng-options="x for x in encryption_Type_2.values"></select>
+                        </td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Encryption Key ID</label></td>
+                            <td><input type="text" class="form-control securityInput"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Encryption Key</label></td>
+                        <td>
+                            <input type="text" class="form-control securityInput" disabled>
+                            <span>
+                                <button class="btn btn-secondary key" type="button">
+                                    <i class="fa fa-key" aria-hidden="true"></i>
+                                </button>
+                            </span>
+                        </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 class=""><b>Encryption Key 3</b></h4>
+                    <table class="table table-hover" style="border:1px solid #ffffff;">
+                        <tr>
+                            <td><label>Encryption Type</label></td>
+                        <td>
+                            <select class="selectGroup securityInput" ng-model="encryption_Type_3.value" ng-options="x for x in encryption_Type_3.values"></select>
+                        </td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Encryption Key ID</label></td>
+                            <td><input type="text" class="form-control securityInput"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Encryption Key</label></td>
+                        <td><input type="text" class="form-control securityInput" disabled>
+                            <span>
+                                <button class="btn btn-secondary key" type="button">
+                                    <i class="fa fa-key" aria-hidden="true"></i>
+                                </button>
+                            </span>
+                        </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-6"></div>          
+           </div>
+        </section>
+        <div class="watermark" />
+    </div>

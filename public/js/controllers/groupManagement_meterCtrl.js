@@ -1,0 +1,129 @@
+﻿app.controller('groupManagement_meterCtrl', function ($scope, $uibModal) {
+    var vm = this;
+    $scope.isCollapsed = false;
+    $scope.boolEdit = true;
+    $scope.dynamicPopover = {
+        templateUrl: '/templates/groupSettings_meter.html',
+        content: '',
+        open: function open() {
+            $scope.dynamicPopover.isOpen = true;
+        },
+        close: function close() {
+            $scope.dynamicPopover.isOpen = false;
+        }
+    };
+    
+    $scope.status = {
+        isopen: false
+    };
+    
+    
+    $scope.groupData_meter = [
+        {
+            "Group_ID" : "Route 1",
+            "Group Type" : "Configuration Group",
+            "[M/E/L/T/N]" : "2/4/6/7/8",
+            "Archived" : "No",
+            "Description" : ""
+
+        },
+        {
+            "Group_ID" : "Test Only",
+            "Group Type" : "Configuration Group",
+            "[M/E/L/T/N]" : "2/4/6/7/8",
+            "Archived" : "No",
+            "Description" : "Testing Create New Meter Configuration"
+
+        },
+        {
+            "Group_ID" : "Unknown Membership Group",
+            "Group Type" : "Unknown Group",
+            "[M/E/L/T/N]" : "2/4/6/7/8",
+            "Archived" : "No",
+            "Description" : "Group of endpoints with an un-known membership state"
+
+        }
+    ];
+    
+    $scope.groupOptions_meter = {
+        columnDefs: [
+            { field: 'Group_ID', cellTemplate: '<div class="ui-grid-cell-contents"><a class="anchorUIGrid" ng-click="grid.appScope.vm.groupDetails(row)">{{row.entity.Group_ID}} </a> </div>' },
+            { field: 'Group Type' },
+            { field: '[M/E/L/T/N]' },
+            { field: 'Archived' },
+            { field: 'Description' },
+            { field: 'Action' }
+        ],
+        data : $scope.groupData_meter,
+        width: "*",
+        enableGridMenu: true,
+        enableSelectAll: true,
+        exporterCsvFilename: 'myFile.csv',
+        exporterPdfDefaultStyle: { fontSize: 9 },
+        exporterPdfTableStyle: { margin: [30, 30, 30, 30] },
+        exporterPdfTableHeaderStyle: { fontSize: 10, bold: true, italics: true, color: 'red' },
+        exporterPdfHeader: { text: "My Header", style: 'headerStyle' },
+        exporterPdfFooter: function (currentPage, pageCount) {
+            return { text: currentPage.toString() + ' of ' + pageCount.toString(), style: 'footerStyle' };
+        },
+        exporterPdfCustomFormatter: function (docDefinition) {
+            docDefinition.styles.headerStyle = { fontSize: 22, bold: true };
+            docDefinition.styles.footerStyle = { fontSize: 10, bold: true };
+            return docDefinition;
+        },
+        exporterPdfOrientation: 'portrait',
+        exporterPdfPageSize: 'LETTER',
+        exporterPdfMaxGridWidth: 500,
+        exporterCsvLinkElement: angular.element(document.querySelectorAll(".custom-csv-link-location")),
+        onRegisterApi: function (gridApi) {
+            $scope.gridApi = gridApi;
+        }
+    };
+    
+    vm.groupDetails = function (row) {
+        var modalInstance = $uibModal.open({
+            templateUrl: '/templates/groupConfigurationDetails_groupManagement_meter.html',
+            controller: 'groupConfigurationDetails_groupManagement_meterCtrl',
+            size: 'md',
+            backdrop  : 'static',
+            keyboard  : false
+        });
+    }
+    
+    
+    $scope.toggled = function (open) {
+        $log.log('Dropdown is now: ', open);
+    };
+    
+    $scope.toggleDropdown = function ($event) {
+        $event.preventDefault();
+        $event.stopPropagation();
+        $scope.status.isopen = !$scope.status.isopen;
+    };
+    
+    $scope.openAddEndpoint = function open(size) {
+        var modalInstance = $uibModal.open({
+            templateUrl: '/templates/addEndpoint_meter.html',
+            controller: 'addEndpoint_meterCtrl',
+            size: size,
+            backdrop  : 'static',
+            keyboard  : false
+        });
+        $scope.dynamicPopover.isOpen = false;
+
+    };
+    
+    $scope.openAssignEndpoint = function open(size) {
+        var modalInstance = $uibModal.open({
+            templateUrl: '/templates/assignEndpoint_meter.html',
+            controller: 'assignEndpoint_meterCtrl',
+            size: size,
+            backdrop  : 'static',
+            keyboard  : false
+        });
+        $scope.dynamicPopover.isOpen = false;
+
+    };
+
+  
+});

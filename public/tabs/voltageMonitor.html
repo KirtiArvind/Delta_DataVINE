@@ -1,0 +1,52 @@
+﻿<div class="container-fluid">
+    <div class="row">
+        <a href='' class="imageBorder" style="margin-left: 80%;"><img src="../assets/images/Print.png" /></a>
+        <a href='' class="imageBorder"><img src="../assets/images/PDF.png" /><b class="anchorText">PDF</b>&nbsp;</a>
+        <a href=''><img src="../assets/images/Excel.png" /><b class="anchorText">Excel</b>&nbsp;</a>
+    </div>
+    <hr />
+    <div class="row">
+        <table class="table table-hover table-bordered" style="border:1px solid #000000;">
+            <tr>
+                <td><h5 class=""><b>Enable Voltage Monitor</b></h5></td>
+                <td><input type="checkbox" ng-model="voltageMonitor" /></td>
+            </tr>
+            <tr>
+                <td><h5 class=""><b>Phase Selection</b></h5></td>
+                <td>
+                    <select ng-model="phaseSelection.value" ng-options="v for v in phaseSelection.values" style="width:88%;"></select>
+                </td>
+            </tr>
+            <tr>
+                <td><h5 class=""><b>Interval Length</b></h5></td>
+                <td>
+                    <select ng-model="voltageIntervalLength.value" ng-options="v for v in voltageIntervalLength.values" style="width:88%;"></select>
+                </td>
+            </tr>
+            <tr>
+                <td><h5 class=""><b>RMS Volt Load Threshold(V)</b></h5></td>
+                <td><input type="text" ng-model="rmsVolt" style="width:88%;" /></td>
+            </tr>
+            <tr>
+                <td><h5 class=""><b>RMS Volt High Threshold(V)</b></h5></td>
+                <td><input type="text" ng-model="rmsVoltHigh" style="width:88%;" /></td>
+            </tr>
+            <tr>
+                <td><h5 class=""><b>Low Voltage Threshold</b></h5></td>
+                <td><input type="text" ng-model="lowVoltageThreshold" style="width:88%;" /></td>
+            </tr>
+            <tr>
+                <td><h5 class=""><b>Low Voltage Threshold Deviation/ Interval(80-100%)</b></h5></td>
+                <td><input type="text" ng-model="lowVoltageDeviation" style="width:88%;" ng-minlength="79" minlength="80" ng-maxlength="99" maxlength="100" /></td>
+            </tr>
+            <tr>
+                <td><h5 class=""><b>High Voltage Threshold Deviation/ Interval(100-120%)</b></h5></td>
+                <td><input type="text" ng-model="highVoltageDeviation" style="width:88%;" ng-minlength="99" minlength="100" ng-maxlength="119" maxlength="120"/></td>
+            </tr>
+        </table>
+    </div>
+    <div class='modal-footer'>
+        <button type="submit" ng-click="" class="btn btn-primary modalBtn">Save</button>
+        <button type="submit" ng-click="cancel()" class="btn btn-default">Cancel</button>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+﻿<div class="container-fluid">
+    <div class="row">
+        <a href='' class="imageBorder" style="margin-left: 80%;"><img src="../assets/images/Print.png" /></a>
+        <a href='' class="imageBorder"><img src="../assets/images/PDF.png" /><b class="anchorText">PDF</b>&nbsp;</a>
+        <a href=''><img src="../assets/images/Excel.png" /><b class="anchorText">Excel</b>&nbsp;</a>
+    </div>
+    <hr />
+    <div class="row">
+        <table class="table table-hover" style="border:1px solid #ffffff;">
+            <tr>
+                <td><h5 class=""><b>OT Multiplier:</b></h5></td>
+                <td><input type="text" ng-model="otMultiplier" style="width:50%;" /></td>
+            </tr>
+            <tr>
+                <td><h5 class=""><b>VT Multiplier:</b></h5></td>
+                <td><input type="text" ng-model="vtMultiplier" style="width:50%;" /></td>
+            </tr>
+            <tr>
+                <td><h5 class=""><b>Register Multiplier:</b></h5></td>
+                <td><input type="text" ng-model="registerMultiplier" style="width:50%;" /></td>
+            </tr>
+        </table>
+    </div>
+    <div class="row">
+        <button type="submit" ng-click="" class="btn btn-primary modalBtn">Save</button>
+        <button type="submit" ng-click="cancel()" class="btn btn-default">Cancel</button>
+    </div>
+</div>

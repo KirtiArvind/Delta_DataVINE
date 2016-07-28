@@ -1,0 +1,62 @@
+﻿<div class="modal-header">
+    <h4 class="modal-title"><b>Assign Device Security Codes</b></h4>
+</div>
+<div class="container-fluid modalBackground">
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="row">
+                    <h5><b>Select Device Class</b></h5>
+                </div>
+                <div class="row">
+                    <select class="selectGroup">
+                        <option value="ANSI">ANSI</option>
+                        <option value="IEC">IEC</option>
+                    </select>
+                </div>
+                <br />
+                <div class="row">
+                    <h5 class=""><b>Select Security Code Version</b></h5>
+                </div>
+                <div class="row">
+                    <select class="selectGroup">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <h5 class=""><b>Security Codes</b></h5>
+                </div>
+                <div class="row">
+                    <input type="text" ng-model="securityCodes" />
+                </div>
+                <div class="row">
+                    <h5 class=""><b>Select File</b></h5>
+                </div>
+                <div class="row">
+                    <input type="file" file-model="securityCodesFile" />
+                </div>
+                <br />
+            </div>
+            <div class="col-md-7">
+                <div class="row">
+                    <h5 class=""><b>Import Result</b></h5>
+                </div>
+                <div class="row modalTable">
+                    <table class="table result_table">
+                        <tr ng-repeat="assignSecurityCode in assignSecurityCodes">
+                            <td>{{assignSecurityCode.key}}</td>
+                            <td>{{assignSecurityCode.value}}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class='modal-footer'>
+    <button type="button" class="btn btn-default btnColor" ng-click="uploadFile()">Assign Device Security Codes</button>
+    <button type="submit" class="btn btn-default btnDefault" ng-click="cancel()">Close</button>
+</div>
+

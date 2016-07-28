@@ -1,0 +1,56 @@
+﻿    <div class="row">
+        <div class="well well-sm">
+            <b>Select Edit Time Range</b>
+            <a class="btn btn-default pull-right popoverClose" ng-click="dynamicPopover.close()">
+                <span class="glyphicon glyphicon-remove"></span>
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <h5 class="" style="margin-left:2%"><b>Date Span</b></h5>
+    </div>
+    <div class="row">
+        <select class="dateOptions">
+            <option value="All">All</option>
+            <option value="BMW">Date1</option>
+            <option value="Mercedes">Date2</option>
+        </select>
+    </div>
+    <div class="row">
+        <h5 class="" style="margin-left:2%"><b>Start Date Time</b></h5>
+    </div>
+    <div class="row">
+        <div class="input-group dateTime">
+            <input type="text" class="form-control" uib-datepicker-popup ng-model="dt" is-open="popup2.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" />
+            <span class="input-group-btn">
+                <button type="button" class="btn btn-default " ng-click="open2()"><i class="glyphicon glyphicon-calendar"></i></button>
+            </span>
+        </div>     
+    </div>
+
+    <div class="row">
+        <uib-timepicker ng-model="mytime" ng-change="changed()" hour-step="hstep" minute-step="mstep" show-meridian="ismeridian" style="margin-left:2%;"></uib-timepicker>
+    </div>
+    <div class="row">
+        <h5 class="" style="margin-left:2%"><b>End Date Time</b></h5>
+    </div>
+    <div class="row">
+        <div class="input-group dateTime">
+            <input type="text" class="form-control" uib-datepicker-popup ng-model="dt1" is-open="popup1.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" />
+            <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="open1()"><i class="glyphicon glyphicon-calendar"></i></button>
+            </span>
+        </div>
+    </div>
+    <div class="row">
+        <uib-timepicker ng-model="mytime1" ng-change="changed()" hour-step="hstep" minute-step="mstep" show-meridian="ismeridian" style="margin-left:2%;"></uib-timepicker>
+    </div>
+    <div class="row">
+        <h5 class="" style="margin-left:2%"><b>Include Archived</b></h5>
+    </div>
+    <div>
+        <input type="checkbox" />Include Archived<br />
+    </div>
+    <div class="row">
+        <button type="button" name="createReport" class="btn btn-default btnColor hyperSproutCreateReport">Filter Configurations</button>
+    </div>

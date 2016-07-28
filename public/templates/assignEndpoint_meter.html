@@ -1,0 +1,69 @@
+﻿<div class="modal-header">
+    <h4 class="modal-title"><b>Assign Endpoint Group Membership</b></h4>
+</div>
+<div class="container-fluid modalBackground">
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="row">
+                    <h5 class=""><b>Select Group</b></h5>
+                </div>
+                <div class="row">
+                    <select class="selectGroup">
+                        <option value="Group1">Test Configuration Group 1</option>
+                        <option value="Group2">Test Configuration Group 2</option>
+                        <option value="Group3">Test Configuration Group 3</option>
+                    </select>
+                </div>
+                <br />
+                <div class="row">
+                    <button type="button" ng-click="openCreateApplicationGroup()" class="btn btn-default btnColor">Create Application Group</button>
+                </div>
+                <div class="row">
+                    <h5 class=""><b>Select Action</b></h5>
+                </div>
+                <div class="row">
+                    <select class="selectGroup">
+                        <option value="Add">Add</option>
+                        <option value="Remove">Remove</option>
+                        <option value="Replace">Replace</option>
+                    </select>
+                </div>
+                <br/>
+                <div class="row">
+                    <h5 class=""><b>Select File</b></h5>
+                </div>
+                <div class="row">
+                    <input type="file" file-model="myFile" />
+                </div>
+                <br/>
+                <div class="row">
+                    <h5 class=""><b>Assign Endpoint Group Memebership</b></h5>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn btn-default btnColor">Assign Endpoint</button>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-7">
+                <div class="row">
+                    <h5 class=""><b>Results</b></h5>
+                </div>
+                <div class="row modalTable">
+                    <table class="table result_table">
+                        <tr ng-repeat="assignEndpoints_meter in assignEndpoints_meter">
+                            <td>{{assignEndpoints_meter.key}}</td>
+                            <td> {{assignEndpoints_meter.value}} </td>
+                        </tr>
+                    </table>
+                </div>
+                <button type="button" class="btn btn-default btnColor" ng-click="Export()" style="margin-left: 68%;">Export Failed</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class='modal-footer'>
+    <button type="button" class="btn btn-default btnColor" ng-click="Save()">Save</button>
+    <button type="button" class="btn btn-default btnDefault" ng-click="cancel()">Cancel</button>
+</div>

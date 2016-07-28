@@ -1,0 +1,40 @@
+﻿<div class="container-fluid">
+    <div class="row">
+        <a href='' class="imageBorder" style="margin-left: 80%;"><img src="../assets/images/Print.png" /></a>
+        <a href='' class="imageBorder"><img src="../assets/images/PDF.png" /><b class="anchorText">PDF</b>&nbsp;</a>
+        <a href=''><img src="../assets/images/Excel.png" /><b class="anchorText">Excel</b>&nbsp;</a>
+    </div>
+    <hr />
+    <div class="row">
+        <table class="table table-hover" style="border:1px solid #ffffff;">
+            <tr>
+                <td><h5 class=""><b>Lockout: Login attempts, optical</b></h5></td>
+                <td><input type="text"  style="width:50%;" ng-model="login_attempts_optical"/></td>
+            </tr>
+            <tr>
+                <td><h5 class=""><b>Lockout: Logout minutes, optical</b></h5></td>
+                <td><input type="text"  style="width:50%;" ng-model="login_minutes_optical"/></td>
+            </tr>
+            <tr>
+                <td><h5 class=""><b>Lockout: Login attempts, lan</b></h5></td>
+                <td><input type="text"  style="width:50%;" ng-model="login_attempts"/></td>
+            </tr>
+            <tr>
+                <td><h5 class=""><b>Lockout: Logout minutes, lan</b></h5></td>
+                <td><input type="text"  style="width:50%;" ng-model="logout_minutes"/></td>
+            </tr>
+            <tr>
+                <td><h5 class=""><b>Consecutive LAN send messgae failure limit to cause features exceeded limit event to be logged</b></h5></td>
+                <td><input type="text"  style="width:50%;" /></td>
+            </tr>
+            <tr>
+                <td><h5 class=""><b>Lan Link Metric(quality) period in seconds</b></h5></td>
+                <td><input type="text"  style="width:50%;" /></td>
+            </tr>
+        </table>
+    </div>
+    <div class="row">
+        <button type="submit" ng-click="" class="btn btn-primary modalBtn">Save</button>
+        <button type="submit" ng-click="cancel()" class="btn btn-default">Cancel</button>
+    </div>
+</div>

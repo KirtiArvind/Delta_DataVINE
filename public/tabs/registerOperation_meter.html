@@ -1,0 +1,91 @@
+﻿<div class="container-fluid">
+    <div class="row">
+        <a href='' class="imageBorder" style="margin-left: 80%;"><img src="../assets/images/Print.png" /></a>
+        <a href='' class="imageBorder"><img src="../assets/images/PDF.png" /><b class="anchorText">PDF</b>&nbsp;</a>
+        <a href=''><img src="../assets/images/Excel.png" /><b class="anchorText">Excel</b>&nbsp;</a>
+    </div>
+    <hr />
+    <div class="row">
+        <table class="table table-hover" style="border:1px solid #ffffff;">
+            <tr>
+                <td><label>Demand Interval Length(mins)</label></td>
+                <td>
+                    <select ng-model="demand_Interval.value" ng-options="x for x in demand_Interval.values" style="width:88%;"></select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>No. of SubIntervals</label></td>
+                <td>
+                    <select ng-model="subIntervals.value" ng-options="x for x in subIntervals.values" style="width:88%;"></select>
+
+                </td>
+            </tr>
+            <tr>
+                <td><label>Cold Load Pickup Time(mins)</label></td>
+                <td>
+                    <input type="text" ng-model="loadPickup" style="width:88%;" ng-minlength="14" minlength="15" ng-maxlength="119" maxlength="120"/>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Power Outage Recognition Time(secs)</label></td>
+                <td>
+                    <input type="text" ng-model="power_Outage" style="width:88%;" ng-minlength="1" minlength="1" ng-maxlength="119" maxlength="120"/>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Test Mode Demand Interval Length</label></td>
+                <td>
+                    <select style="width:88%;">
+                        <option value="Interval_Length">60min</option>
+                        <option value="Interval_Length">Quantity2</option>
+                        <option value="Interval_Length">Quantity3</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Number of Test Mode Subintervals</label></td>
+                <td>
+                    <select style="width:88%;">
+                        <option value="Subintervals">1</option>
+                        <option value="Subintervals">Quantity2</option>
+                        <option value="Subintervals">Quantity3</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Time to remain in Test Mode(mins)</label></td>
+                <td>
+                    <input type="text" ng-model="loadPickup" style="width:88%;" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    <hr />
+    <div class="row">
+        <h5 class=""><b>Daily Self Reads</b></h5>
+    </div>
+    <div class="row">
+        <table class="table table-hover" style="border:1px solid #ffffff;">
+            <tr>
+                <td><h5 class=""><b>Daily Self Read Time</b></h5></td>
+                <td>Enable &nbsp;<input type="checkbox" ng-model="selfReadTime"></td>
+                <td>
+                    <select style="width:30%;">
+                        <option value="All">30mins</option>
+                        <option value="BMW">30mins</option>
+                        <option value="Mercedes">30mins</option>
+                    </select>
+                    &nbsp;<select style="width:30%;">
+                                <option value="All">30mins</option>
+                                <option value="BMW">30mins</option>
+                                <option value="Mercedes">30mins</option>
+                            </select>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class='modal-footer'>
+        <button type="submit" ng-click="" class="btn btn-primary modalBtn">Save</button>
+        <button type="submit" ng-click="cancel()" class="btn btn-default">Cancel</button>
+    </div>
+</div>

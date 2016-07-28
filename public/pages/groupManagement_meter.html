@@ -1,0 +1,31 @@
+﻿<div class="container-fluid">
+    <div class="row">
+        <h3>Group Management</h3>
+    </div>
+    <div class="row">
+        <a href='' class="imageBorder"><img src="../assets/images/Print.png" />&nbsp;</a>
+        <a href='' class="imageBorder"><img src="../assets/images/PDF.png" /><b class="anchorText">PDF</b>&nbsp;</a>
+        <a href=''><img src="../assets/images/Excel.png" /><b class="anchorText">Excel</b></a>
+        <button type="button" class="btn btn-default groupSettingsPopover btnColor" popover-append-to-body='false' popover-animation='true'
+                popover-placement='bottom' popover-is-open="dynamicPopover.isOpen" uib-popover-template='dynamicPopover.templateUrl'>
+            Settings
+        </button>&nbsp;
+        <button type="button" ng-click="openAddEndpoint()" class="btn btn-default btnColor">Add Endpoint to System</button>&nbsp;
+        <button type="button" ng-click="openAssignEndpoint()" class="btn btn-default btnColor">Assign Endpoint Group Membership</button>
+    </div>
+    <br />
+    <div class="row">
+        <div class="container-fluid">
+            <div ui-grid="groupOptions_meter" ui-grid-edit ui-grid-exporter ui-grid-selection ui-grid-resize-columns class="grid"></div>
+        </div>
+        <div style="margin-left: 2%;">
+            <b>E</b>:Entering &nbsp;,
+            <b>L</b>:Leaving &nbsp;,
+            <b>T</b>:Transitioning &nbsp;,
+            <b>N</b>:Not-Registered
+        </div>
+        <div class="container">
+            <div ui-view></div>
+        </div>
+    </div>
+</div>

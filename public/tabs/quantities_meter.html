@@ -1,0 +1,70 @@
+﻿<div class="container-fluid">
+    <div class="row">
+        <a href='' class="imageBorder" style="margin-left: 80%;"><img src="../assets/images/Print.png" /></a>
+        <a href='' class="imageBorder"><img src="../assets/images/PDF.png" /><b class="anchorText">PDF</b>&nbsp;</a>
+        <a href=''><img src="../assets/images/Excel.png" /><b class="anchorText">Excel</b>&nbsp;</a>
+    </div>
+    <hr />
+    <div class="row">
+        <table class="table table-hover" style="border:1px solid #ffffff;">
+            <tr>
+                <td><label>Energy1</label></td>
+                <td>
+                    <select ng-model="energy1.value" ng-options="x for x in energy1.values" style="width:50%;"></select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Energy2</label></td>
+                <td>
+                    <select ng-model="energy2.value" ng-options="x for x in energy2.values" style="width:50%;"></select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Energy3</label></td>
+                <td>
+                    <select ng-model="energy3.value" ng-options="x for x in energy3.values" style="width:50%;"></select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Energy4</label></td>
+                <td>
+                    <select ng-model="energy4.value" ng-options="x for x in energy4.values" style="width:50%;"></select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Demand</label></td>
+                <td>
+                    <select ng-model="demand.value" ng-options="x for x in demand.values" style="width:50%;"></select>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="row">
+        <h4>Load Control Disconnect Threshold</h4>
+        <table>
+            <tr>
+                <td><label>Load Control Disconnect Threshold (Max Demand)</label></td>
+                <td>
+                    <select style="width:100%;">
+                        <option value="State">Disabled</option>
+                        <option value="State1">Enabled</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Reconnect Method</label></td>
+                <td>
+                    <select style="width:100%;" disabled>
+                        <option value="">Option1</option>
+                        <option value="">Option2</option>
+                        <option value="">Option3</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class='modal-footer'>
+        <button type="submit" ng-click="" class="btn btn-primary modalBtn">Save</button>
+        <button type="submit" ng-click="cancel()" class="btn btn-default">Cancel</button>
+    </div>
+</div>

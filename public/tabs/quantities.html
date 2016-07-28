@@ -1,0 +1,42 @@
+﻿<div class="container-fluid">
+    <div class="row">
+        <a href='' class="imageBorder" style="margin-left: 80%;"><img src="../assets/images/Print.png" /></a>
+        <a href='' class="imageBorder"><img src="../assets/images/PDF.png" /><b class="anchorText">PDF</b>&nbsp;</a>
+        <a href=''><img src="../assets/images/Excel.png" /><b class="anchorText">Excel</b>&nbsp;</a>
+    </div>
+    <hr />
+    <div class="row">
+        <table class="table table-hover" style="border:1px solid #ffffff;">
+            <tr>
+                <td><label>Energy#</label></td>
+                <td>
+                    <select style="width:50%;">
+                        <option value="None">None</option>
+                        <option value="Wh_delivered">Wh delivered</option>
+                        <option value="Wh_received">Wh received</option>
+                        <option value="VAh_delivered">VAh delivered Arith</option>
+                        <option value="VAh_received">VAh received Arith</option>
+                        <option value="Wh_Net">Wh Net</option>
+                        <option value="Wh_Uni-Directional">Wh Uni-Directional</option>
+                        <option value="Vh">Vh</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Demand</label></td>
+                <td>
+                    <select style="width:50%;">
+                        <option value="All">Max VA delivered Arith</option>
+                        <option value="BMW">Max VA received Arith</option>
+                        <option value="Mercedes">Max W delivered</option>
+                        <option value="Mercedes">Max W received</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class='modal-footer'>
+        <button type="submit" ng-click="" class="btn btn-primary modalBtn">Save</button>
+        <button type="submit" ng-click="cancel()" class="btn btn-default">Cancel</button>
+    </div>
+</div>

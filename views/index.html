@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <!-- Load Bootstrap -->
+    <link href="stylesheets/lib/bootstrap.css" rel="stylesheet" />
+    <link href="stylesheets/css/style.css" rel="stylesheet" />
+    <link href="stylesheets/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- UI Grid CSS -->
+    <link href="stylesheets/lib/ui-grid.css" rel="stylesheet" />
+    <link href="stylesheets/lib/ui-grid.eot" rel="stylesheet" />
+    <link href="stylesheets/lib/ui-grid.svg" rel="stylesheet" />
+    <link href="stylesheets/lib/ui-grid.ttf" rel="stylesheet" />
+    <link href="stylesheets/lib/ui-grid.woff" rel="stylesheet" />
+    <link href="stylesheets/lib/sweetalert.css" rel="stylesheet" />
+
+    <!-- Lib JS includes -->
+    <script src="js/lib/jquery-2.2.4.js"></script>
+
+    <!-- Angular JS includes -->
+    <script src="js/lib/angular.js"></script>
+    <script src="js/lib/angular-ui-router.js"></script>
+    <script src="js/lib/angular-animate.js"></script>
+    <script src="js/lib/ui-bootstrap-tpls-0.14.2.js"></script>
+    <script src="js/lib/ui-grid.js"></script>
+    <script src="js/lib/angular-touch.js"></script>
+    <script src="js/lib/pdfmake.js"></script>
+    <script src="js/lib/csv.js"></script>
+    <script src="js/lib/vfs_fonts.js"></script>
+
+    <!-- Library for Sweet Alert-->
+    <script src="js/lib/sweetalert.min.js"></script>
+
+    <!-- Bootstrap JS includes -->
+    <script src="js/lib/bootstrap.js"></script>
+
+    <!-- Controller JS includes -->
+    <script src="js/controllers/dataVINEController.js"></script>
+    <script src="js/controllers/loginCtrl.js"></script>
+    <script src="js/controllers/homeCtrl.js"></script>
+    <script src="js/controllers/configurationsCtrl.js"></script>
+    <script src="js/controllers/importConfigurationCtrl.js"></script>
+    <script src="js/controllers/configurationManagementCtrl.js"></script>
+    <script src="js/controllers/configurationManagement_meterCtrl.js"></script>
+    <script src="js/controllers/securityCodeManagementCtrl.js"></script>
+    <script src="js/controllers/tagsCtrl.js"></script>
+    <script src="js/controllers/jobStatusCtrl.js"></script>
+    <script src="js/controllers/assignSecurityCodesCtrl.js"></script>
+    <script src="js/controllers/editConfigurationCtrl.js"></script>
+    <script src="js/controllers/newConfigurationCtrl.js"></script>
+    <script src="js/controllers/hyperSproutDownloadsCtrl.js"></script>
+    <script src="js/controllers/downloadConfigurationCtrl.js"></script>
+    <script src="js/controllers/deviceManagementCtrl.js"></script>
+    <script src="js/controllers/networkJobStatusCtrl.js"></script>
+    <script src="js/controllers/nodeStatusOverviewCtrl.js"></script>
+    <script src="js/controllers/dataVineHealthCtrl.js"></script>
+    <script src="js/controllers/endpointCleanupCtrl.js"></script>
+    <script src="js/controllers/configurations_meterCtrl.js"></script>
+    <script src="js/controllers/newConfiguration_meterCtrl.js"></script>
+    <script src="js/controllers/importConfiguration_meterCtrl.js"></script>
+    <script src="js/controllers/editConfiguration_meterCtrl.js"></script>
+    <script src="js/controllers/meterDownloadsCtrl.js"></script>
+    <script src="js/controllers/downloadConfiguration_meterCtrl.js"></script>
+    <script src="js/controllers/tags_meterCtrl.js"></script>
+    <script src="js/controllers/securityCodeManagement_meterCtrl.js"></script>
+    <script src="js/controllers/assignSecurityCodes_meterCtrl.js"></script>
+    <script src="js/controllers/jobStatus_meterCtrl.js"></script>
+    <script src="js/controllers/serversCtrl.js"></script>
+    <script src="js/controllers/relaysCtrl.js"></script>
+    <script src="js/controllers/addRelaytoSystemCtrl.js"></script>
+    <script src="js/controllers/relayDetailsCtrl.js"></script>
+    <script src="js/controllers/serverDetailsCtrl.js"></script>
+    <script src="js/controllers/nodeRelaysCtrl.js"></script>
+    <script src="js/controllers/nodeServersCtrl.js"></script>
+    <script src="js/controllers/nodeEndpointsCtrl.js"></script>
+    <script src="js/controllers/endpointCleanupCtrl.js"></script>
+    <script src="js/controllers/manuallyDeregisterCtrl.js"></script>
+    <script src="js/controllers/groupConfigurationDetailsCtrl.js"></script>
+    <script src="js/controllers/groupConfigurationDetails_meterCtrl.js"></script>
+    <script src="js/controllers/defineUsersCtrl.js"></script>
+    <script src="js/controllers/securityCtrl.js"></script>
+    <script src="js/controllers/toolsJobStatusCtrl.js"></script>
+    <script src="js/controllers/userSettingsCtrl.js"></script>
+    <script src="js/controllers/onDemandNeedCtrl.js"></script>
+    <script src="js/controllers/communicationStatisticsCtrl.js"></script>
+    <script src="js/controllers/dataVineHealth_reportsCtrl.js"></script>
+    <script src="js/controllers/deviceFirmwareVersionsCtrl.js"></script>
+    <script src="js/controllers/deviceRegistrationStatusCtrl.js"></script>
+    <script src="js/controllers/systemAuditLogCtrl.js"></script>
+    <script src="js/controllers/systemUpdatesCtrl.js"></script>
+    <script src="js/controllers/batteryLifeCtrl.js"></script>
+    <script src="js/controllers/nodeDevicesCtrl.js"></script>
+    <script src="js/controllers/nodeHyperSproutDetailCtrl.js"></script>
+    <script src="js/controllers/cellEndpointsCtrl.js"></script>
+    <script src="js/controllers/cellRelaysCtrl.js"></script>
+    <script src="js/controllers/dataVineHealthCtrl.js"></script>
+    <script src="js/controllers/nodeDeviceDetailsCtrl.js"></script>
+    <script src="js/controllers/dataVINEServerHealthDetailsCtrl.js"></script>
+    <script src="js/controllers/groupManagementCtrl.js"></script>
+    <script src="js/controllers/groupConfigurationDetails_groupManagementCtrl.js"></script>
+    <script src="js/controllers/addEndpointCtrl.js"></script>
+    <script src="js/controllers/assignEndpointCtrl.js"></script>
+    <script src="js/controllers/createApplicationGroupCtrl.js"></script>
+    <script src="js/controllers/groupManagement_meterCtrl.js"></script>
+    <script src="js/controllers/groupConfigurationDetails_groupManagement_meterCtrl.js"></script>
+    <script src="js/controllers/addEndpoint_meterCtrl.js"></script>
+    <script src="js/controllers/assignEndpoint_meterCtrl.js"></script>
+
+    <!-- Angular Breadcrumb Lib includes-->
+    <script src="js/lib/angular-breadcrumb.js"></script>
+
+</head>
+<body class="mainBody" ng-app="dataVINEApp" ng-controller="dataVINECtrl">
+    <div ui-view></div>
+</body>
+
+</html>
